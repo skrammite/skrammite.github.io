@@ -5,8 +5,8 @@
   "start_url": "https://skrammite.42web.io", 
   "orientation": "portrait",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#0241cc",
+  "theme_color": "#0241cc",
   "icons": [
     {
       "src": "https://skrammite.42web.io/icon192.png",
