@@ -2,7 +2,7 @@
   "name": "Skrammite",
   "short_name": "Skrammite",
   "description": "Discover Skrammite's Beats, download, start writing. That simple.",
-  "start_url": "/", 
+  "start_url": "https://skrammite.42web.io", 
   "orientation": "portrait",
   "display": "standalone",
   "background_color": "#ffffff",
