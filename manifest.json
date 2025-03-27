@@ -1,0 +1,23 @@
+{
+  "name": "Skrammite",
+  "short_name": "Skrammite",
+  "description": "Discover Skrammite's Beats, download, start writing. That simple.",
+  "start_url": "/", 
+  "orientation": "portrait",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://skrammite.42web.io/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://skrammite.42web.io/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US"
+}
