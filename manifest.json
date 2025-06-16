@@ -1,0 +1,32 @@
+{
+  "name": "EMANVUR",
+  "short_name": "EMANVUR",
+  "theme_color": "#00000",
+  "icons": [
+    {
+      "src": "./icons/loog/emanvur_logo_maskable_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/loog/emanvur_logo_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/loog/emanvur_logo_maskable_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/loog/emanvur_logo_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#00000"
+}
