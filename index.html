@@ -6,6 +6,7 @@
   <title>​†EMANVUR​​†</title>
   <link rel="preload" as="image" href="./assets/images/can2_up_bg.webp">
   <link rel="shortcut icon" href="./icons/loog/emanvur_logo_fav.svg" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <style>
@@ -30,24 +31,18 @@
         user-select: none;
     }
 
-    html, body{
-        width: 100svw;
-        height: 100svh;
-        overflow: hidden;
+    body{
         background-color: var(--blue);
         color: var(--white);
         font-family: text;
         background-image: url("./assets/images/can2_up_bg.webp");
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         transition: all 0.3s ease-in-out;
-    }
-
-    body{
         /* padding: 0 3rem; */
-        width: 100%;
-        height: 100%;
+        width: 100svw;
+        height: 100svh;
         font-size: 16px;
         position: relative;
 
@@ -566,13 +561,13 @@ document.addEventListener('DOMContentLoaded', function() {
             platform: "linkedin", url: "https://linkedin.com/in/emanvur", icon:  "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z'/></svg>"
         } ,
         {
-            platform: "googlemail", url: "emanvur@gmail.com", icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z'/></svg>"
+            platform: "gmail", url: "emanvur@gmail.com", icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z'/></svg>"
         } ,
         {
             platform: "outlook", url: "emanvur@outlook.com", icon: "<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor'  viewBox='0 0 24 24'><path d='M22,8v8a.94.94,0,0,1-1,1H14v4L2,19.2V4.8L14,3V7h7a.94.94,0,0,1,1,1m-1,.1-4,2.3L14,8.7v1.6L17,12l4-2.3V8.1m-13.08,0c-2.1-.07-3.13,1.78-3.13,4s1.07,4,3.13,4c1.87,0,3.08-1.69,3.08-3.89s-.87-4-3.08-4.08M7.61,9.7c.84,0,1.59.74,1.59,2.25s-.75,2.36-1.59,2.36S6.1,13.2,6.1,12,6.78,9.7,7.61,9.7Z'/></svg>"
         } ,
         {
-            platform: "tumblr", url: "hhttps://www.tumblr.com/emanvur", icon: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='currentColor'  version='1.1' id='Layer_1' viewBox='-143 145 512 512' xml:space='preserve'><path d='M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M185.2,515H185  c-11,5.1-20.8,8.8-29.7,10.8c-8.9,2.1-18.5,3.1-28.8,3.1c-11.7,0-22.1-1.5-31-4.4c-9-3-16.7-7.2-23-12.6  c-6.4-5.5-10.8-11.3-13.2-17.5c-2.5-6.2-3.7-15.1-3.7-26.8v-89.8H27.3v-36.2c10.1-3.3,18.7-8,25.9-14.1c7.2-6.1,12.9-13.4,17.3-22  c4.3-8.5,7.3-19.4,9-32.6h36.4v64.7h60.7v40.2h-60.7v65.6c0,14.9,0.8,24.4,2.4,28.6c1.6,4.2,4.5,7.6,8.8,10.1  c5.6,3.4,12.1,5.1,19.4,5.1c13,0,25.8-4.2,38.7-12.6V515z'/></svg>"
+            platform: "tumblr", url: "https://www.tumblr.com/emanvur", icon: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='currentColor'  version='1.1' id='Layer_1' viewBox='-143 145 512 512' xml:space='preserve'><path d='M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M185.2,515H185  c-11,5.1-20.8,8.8-29.7,10.8c-8.9,2.1-18.5,3.1-28.8,3.1c-11.7,0-22.1-1.5-31-4.4c-9-3-16.7-7.2-23-12.6  c-6.4-5.5-10.8-11.3-13.2-17.5c-2.5-6.2-3.7-15.1-3.7-26.8v-89.8H27.3v-36.2c10.1-3.3,18.7-8,25.9-14.1c7.2-6.1,12.9-13.4,17.3-22  c4.3-8.5,7.3-19.4,9-32.6h36.4v64.7h60.7v40.2h-60.7v65.6c0,14.9,0.8,24.4,2.4,28.6c1.6,4.2,4.5,7.6,8.8,10.1  c5.6,3.4,12.1,5.1,19.4,5.1c13,0,25.8-4.2,38.7-12.6V515z'/></svg>"
         } ,
         {
             platform: "picsart", url: "https://www.picsart.com/u/emanvur", icon: "<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 192 192' data-name='Layer 1'><path d='M0 0h192v192H0z' style='fill:none'/><path style='fill:currentColor;' d='M96 28a45.5 45.5 0 1 1-45.5 45.5A45.55 45.55 0 0 1 96 28m0-12a57.5 57.5 0 1 0 57.5 57.5A57.5 57.5 0 0 0 96 16Z'/><path d='M44.5 170V74' style='stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:12px;fill:none'/></svg>"
@@ -606,8 +601,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let socialcontHtml = '';
 
     socialmedia.forEach(item => {
-        socialcontHtml += '<a href="'+ item.url +'" target="_blank" title="'+item.platform+'"> '+ item.icon  +' </a>';
+        let href = item.url;
+
+        // Check for Gmail or Outlook and convert to mailto link
+        if (item.platform.toLowerCase() === "gmail" || item.platform.toLowerCase() === "outlook") {
+            href = "mailto:" + item.url.replace(/^mailto:/, "");
+        }
+
+        socialcontHtml += '<a href="' + href + '" target="_blank" title="' + item.platform + '"> ' + item.icon + ' </a>';
     });
+
 
     socialcont.innerHTML = socialcontHtml;
 
